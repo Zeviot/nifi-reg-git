@@ -1,5 +1,5 @@
 flows:
-  1945214f-0253-4282-b71c-478bbb653566: {ver: 1, file: Flow1.snapshot, comments: '',
-    author: anonymous, created: 1572950881373, flowName: Flow1, flowDesc: ''}
+  1945214f-0253-4282-b71c-478bbb653566: {ver: 2, file: Flow1.snapshot, comments: VERSION
+      2 BABYYYYY, author: anonymous, created: 1572951245679, flowName: Flow1, flowDesc: ''}
 layoutVer: 1
 bucketId: c2d02b87-227d-4da0-8aab-0a9767f2cd38
