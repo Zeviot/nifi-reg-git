@@ -1,0 +1,217 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "externalControllerServices" : { },
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "4bb322d7-8f9a-3fe4-849c-05a7b0026545",
+            "id" : "1a565de8-2b20-3436-9920-b2c817b57351",
+            "name" : "LogAttribute",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "4bb322d7-8f9a-3fe4-849c-05a7b0026545",
+          "identifier" : "8261ee33-10e5-36ae-a574-6440000e33b3",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "4bb322d7-8f9a-3fe4-849c-05a7b0026545",
+            "id" : "307a3a81-d68c-3d8e-a0b2-e0e213be6393",
+            "name" : "GenerateFlowFile",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        } ],
+        "controllerServices" : [ ],
+        "funnels" : [ ],
+        "identifier" : "4bb322d7-8f9a-3fe4-849c-05a7b0026545",
+        "inputPorts" : [ ],
+        "labels" : [ ],
+        "name" : "Proccess Group",
+        "outputPorts" : [ ],
+        "position" : {
+          "x" : 472.0,
+          "y" : 96.0
+        },
+        "processGroups" : [ ],
+        "processors" : [ {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.10.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "4bb322d7-8f9a-3fe4-849c-05a7b0026545",
+          "identifier" : "307a3a81-d68c-3d8e-a0b2-e0e213be6393",
+          "name" : "GenerateFlowFile",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 480.0,
+            "y" : 104.0
+          },
+          "properties" : {
+            "character-set" : "UTF-8",
+            "File Size" : "0B",
+            "Batch Size" : "1",
+            "Unique FlowFiles" : "false",
+            "Data Format" : "Text"
+          },
+          "propertyDescriptors" : {
+            "character-set" : {
+              "displayName" : "Character Set",
+              "identifiesControllerService" : false,
+              "name" : "character-set",
+              "sensitive" : false
+            },
+            "File Size" : {
+              "displayName" : "File Size",
+              "identifiesControllerService" : false,
+              "name" : "File Size",
+              "sensitive" : false
+            },
+            "generate-ff-custom-text" : {
+              "displayName" : "Custom Text",
+              "identifiesControllerService" : false,
+              "name" : "generate-ff-custom-text",
+              "sensitive" : false
+            },
+            "Batch Size" : {
+              "displayName" : "Batch Size",
+              "identifiesControllerService" : false,
+              "name" : "Batch Size",
+              "sensitive" : false
+            },
+            "Unique FlowFiles" : {
+              "displayName" : "Unique FlowFiles",
+              "identifiesControllerService" : false,
+              "name" : "Unique FlowFiles",
+              "sensitive" : false
+            },
+            "Data Format" : {
+              "displayName" : "Data Format",
+              "identifiesControllerService" : false,
+              "name" : "Data Format",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.GenerateFlowFile",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ "success" ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.10.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "4bb322d7-8f9a-3fe4-849c-05a7b0026545",
+          "identifier" : "1a565de8-2b20-3436-9920-b2c817b57351",
+          "name" : "LogAttribute",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 488.0,
+            "y" : 336.0
+          },
+          "properties" : {
+            "character-set" : "UTF-8",
+            "Log Level" : "info",
+            "attributes-to-log-regex" : ".*",
+            "Log Payload" : "false"
+          },
+          "propertyDescriptors" : {
+            "Log prefix" : {
+              "displayName" : "Log prefix",
+              "identifiesControllerService" : false,
+              "name" : "Log prefix",
+              "sensitive" : false
+            },
+            "character-set" : {
+              "displayName" : "Character Set",
+              "identifiesControllerService" : false,
+              "name" : "character-set",
+              "sensitive" : false
+            },
+            "Log Level" : {
+              "displayName" : "Log Level",
+              "identifiesControllerService" : false,
+              "name" : "Log Level",
+              "sensitive" : false
+            },
+            "attributes-to-ignore-regex" : {
+              "displayName" : "Attributes to Ignore by Regular Expression",
+              "identifiesControllerService" : false,
+              "name" : "attributes-to-ignore-regex",
+              "sensitive" : false
+            },
+            "Attributes to Ignore" : {
+              "displayName" : "Attributes to Ignore",
+              "identifiesControllerService" : false,
+              "name" : "Attributes to Ignore",
+              "sensitive" : false
+            },
+            "Attributes to Log" : {
+              "displayName" : "Attributes to Log",
+              "identifiesControllerService" : false,
+              "name" : "Attributes to Log",
+              "sensitive" : false
+            },
+            "attributes-to-log-regex" : {
+              "displayName" : "Attributes to Log by Regular Expression",
+              "identifiesControllerService" : false,
+              "name" : "attributes-to-log-regex",
+              "sensitive" : false
+            },
+            "Log Payload" : {
+              "displayName" : "Log Payload",
+              "identifiesControllerService" : false,
+              "name" : "Log Payload",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.LogAttribute",
+          "yieldDuration" : "1 sec"
+        } ],
+        "remoteProcessGroups" : [ ],
+        "variables" : { }
+      },
+      "flowEncodingVersion" : "1.0",
+      "parameterContexts" : { }
+    }
+  }
+}
